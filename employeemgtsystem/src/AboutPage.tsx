@@ -1,11 +1,12 @@
 //src/AboutPage.tsx
-
 import React from 'react';
+import Navbar from './Navbar';
 import './AboutPage.css';
 
 const AboutPage: React.FC = () => {
   return (
     <div className="about-page">
+    <Navbar />
       <h1>About Employee Management System</h1>
       <p>
         Welcome to the Employee Management System. This system helps manage the company's employees efficiently. 
