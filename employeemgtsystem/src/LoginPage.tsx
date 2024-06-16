@@ -1,22 +1,26 @@
-// src/LandingPage.tsx
+// src/LoginPage.tsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './LandingPage.css';
+import { Link } from 'react-router-dom';
+import './LoginPage.css';
 
-const LandingPage: React.FC = () => {
+const LoginPage: React.FC = () => {
   return (
-    <div className="landing-page">
-      <nav className="navbar">
-        <div className="navbar-title">Employee Management System</div>
-        <ul className="navbar-links">
-          <li><Link to="#about">About</Link></li>
-          <li><Link to="/login">Login</Link></li>
-          <li><Link to="#signup">Sign Up</Link></li>
-        </ul>
-      </nav>
+    <div className="login-page">
+      <h2>Login Page</h2>
+      <div className="login-buttons-container">
+        <Link to="/login/admin">
+          <button className="btn">Login as Admin</button>
+        </Link>
+        <Link to="/login/manager">
+          <button className="btn">Login as Manager</button>
+        </Link>
+        <Link to="/login/employee">
+          <button className="btn">Login as Employee</button>
+        </Link>
+      </div>
     </div>
   );
 };
 
-export default LandingPage;
+export default LoginPage;
 

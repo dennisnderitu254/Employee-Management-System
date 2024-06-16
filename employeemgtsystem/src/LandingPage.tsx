@@ -1,5 +1,6 @@
 // src/LandingPage.tsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './LandingPage.css';
 
 const LandingPage: React.FC = () => {
@@ -8,9 +9,9 @@ const LandingPage: React.FC = () => {
       <nav className="navbar">
         <div className="navbar-title">Employee Management System</div>
         <ul className="navbar-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#login">Login</a></li>
-          <li><a href="#signup">Sign Up</a></li>
+          <li><Link to="#about">About</Link></li>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="#signup">Sign Up</Link></li>
         </ul>
       </nav>
     </div>
