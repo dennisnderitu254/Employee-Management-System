@@ -1,6 +1,6 @@
 // src/LandingPage.tsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage: React.FC = () => {
