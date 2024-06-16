@@ -1,8 +1,11 @@
-/* src/LoginPage.css */
 .login-page {
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full height of the viewport */
   text-align: center;
   font-family: Arial, sans-serif;
-  margin-top: 50px;
 }
 
 .login-buttons-container {

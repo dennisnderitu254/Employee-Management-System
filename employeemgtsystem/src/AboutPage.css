@@ -1,8 +1,13 @@
 .about-page {
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center; /* Justify the content vertically */
+    align-items: center; /* Center the content horizontally */
     padding: 20px;
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify; /* Ensure the text within the div is justified */
   }
   
   .about-page h1 {
@@ -13,5 +18,6 @@
   .about-page p {
     font-size: 1.2rem;
     line-height: 1.6;
+    text-align: justify;
   }
   

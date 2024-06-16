@@ -1,11 +1,13 @@
 // src/LoginPage.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 import './LoginPage.css';
 
 const LoginPage: React.FC = () => {
   return (
     <div className="login-page">
+    <Navbar />
       <h2>Login Page</h2>
       <div className="login-buttons-container">
         <Link to="/login/admin">

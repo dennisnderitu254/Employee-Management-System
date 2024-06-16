@@ -1,5 +1,6 @@
 //src/SignUpPage.tsx
 import React, { useState } from 'react';
+import Navbar from './Navbar';
 import './SignUpPage.css';
 
 const SignUpPage: React.FC = () => {
@@ -20,6 +21,7 @@ const SignUpPage: React.FC = () => {
 
   return (
     <div className="sign-up-page">
+    <Navbar />
       <h2>Employee Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
