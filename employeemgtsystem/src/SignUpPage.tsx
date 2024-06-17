@@ -9,19 +9,35 @@ const SignUpPage: React.FC = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       alert('Passwords do not match');
       return;
     }
-    // Handle the sign-up logic here
-    console.log({ name, email, password, confirmPassword });
+    try {
+      const response = await fetch('http://localhost:5000/api/users/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, password }),
+      });
+      const data = await response.json();
+      console.log(data);
+      if (response.ok) {
+        alert('User registered successfully');
+      } else {
+        alert(data.msg);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
     <div className="sign-up-page">
-    <Navbar />
+      <Navbar />
       <h2>Employee Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
