@@ -6,7 +6,9 @@ import './Navbar.css';
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-title">Employee Management System</div>
+      <div className="navbar-title">
+        <Link to="/login">Employee Management System</Link>
+      </div>
       <ul className="navbar-links">
         <li><Link to="/about">About</Link></li>
         <li><Link to="/login">Login</Link></li>
