@@ -7,7 +7,7 @@ import './LoginPage.css';
 const LoginPage: React.FC = () => {
   return (
     <div className="login-page">
-    <Navbar />
+      <Navbar />
       <h2>Login Page</h2>
       <div className="login-buttons-container">
         <Link to="/login/admin">
