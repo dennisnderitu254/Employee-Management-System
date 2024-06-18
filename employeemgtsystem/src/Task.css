@@ -1,0 +1,22 @@
+.task {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .task.done {
+    background-color: #d4edda;
+  }
+  
+  .task button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .task button[disabled] {
+    background-color: #6c757d;
+  }
+  
